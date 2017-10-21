@@ -1,0 +1,24 @@
+.light {
+    margin: 0 auto;
+    width: 7px;
+    height: 7px;
+    transform: translateY(15px);
+    border-radius: 7px;
+    background-color: #fff;
+    
+}
+.light0 {
+    animation:  light_breath 1s linear infinite alternate;
+}
+.light1 {
+    animation:  light_breath 1s linear 1s infinite alternate;
+}
+
+@keyframes light_breath {
+    0% {
+        box-shadow: 0 0 12px 4px rgba(255, 255, 255, .2);
+    }
+    100% {
+        box-shadow: 0 0 5px 3px rgba(255, 255, 255, .9);
+    }
+}
